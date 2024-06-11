@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>If Unless</title>
+<link th:href="@{/Css/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>User List</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>User Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.username}"></td>
+                <td th:text="${user.email}"></td>
+                <td>
+                    <a class="btn btn-primary" th:if="${user.role} == 'ADMIN'">Update</a>
+                    <a class="btn btn-danger" th:if="${user.role} == 'ADMIN'">Delete</a>
+                    <a class="btn btn-primary" th:unless="${user.role} == 'ADMIN'">View</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

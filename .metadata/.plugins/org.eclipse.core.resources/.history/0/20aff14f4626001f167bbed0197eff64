@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Iteration Thymeleaf</title>
+<link th:href="@{/Css/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+<div>
+   <h1></h1>
+     <table class="table">
+       <thead>
+       <tr>
+           <th>Employee firstname</th>
+           <th>Employee lastname </th>
+           <th>Employee email </th>
+       </tr>
+       </thead>
+       <tbody>
+           <tr th:each ="employee: ${employees}">
+           <td th.text ="${employeestat.firstname}" ></td>
+           <td th.text ="${employeestat.lastname}" ></td>
+           <td th.text ="${employeestat.email}" ></td>
+            </tr>
+           
+       
+       </tbody>
+     
+     
+     </table>
+
+
+</div>
+
+      
+
+</body>
+</html>

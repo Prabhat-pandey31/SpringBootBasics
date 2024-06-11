@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Prabhat Pandey Bootstrap</title>
+<link th:href = "@{/Css/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<table>
+<thead>
+<tr>
+<th>Employee first name</th>
+<th>Employee last name</th>
+<th>Employee email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>prabhat</td>
+<td>pandey </td>
+<td>prabhatpandey3105@gmail.com </td>
+</tr>
+
+<tr>
+<td>prveen</td>
+<td>kuntal </td>
+<td>praveenk315@gmail.com </td>
+</tr>
+
+<tr>
+<td>vikas</td>
+<td>singh </td>
+<td>vikassingh@gmail.com </td>
+</tr>
+
+
+
+</tbody>
+
+</table>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

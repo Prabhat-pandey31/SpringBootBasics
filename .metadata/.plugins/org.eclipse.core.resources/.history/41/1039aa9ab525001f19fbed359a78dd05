@@ -1,0 +1,2 @@
+spring.application.name=springbootdemo
+logging.level.org.springframework=debug

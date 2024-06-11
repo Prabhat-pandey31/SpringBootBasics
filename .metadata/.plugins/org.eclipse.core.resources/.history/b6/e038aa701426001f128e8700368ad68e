@@ -1,0 +1,12 @@
+package com.pp.learning.service;
+
+import java.util.List;
+
+import com.pp.learning.model.Employee;
+
+public interface EmployeeService {
+	
+	Employee saveEmployee(Employee employee);
+	List<Employee> getAllEmployee();
+
+}

@@ -1,0 +1,9 @@
+package com.pp.learning.service;
+
+import com.pp.learning.model.Employee;
+
+public interface EmployeeService {
+	
+	Employee saveEmployee(Employee employee);
+
+}

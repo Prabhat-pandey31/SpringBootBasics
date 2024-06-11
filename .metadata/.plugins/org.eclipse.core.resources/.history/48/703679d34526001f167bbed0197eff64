@@ -1,0 +1,30 @@
+package com.pp.learning;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.pp.learning.model.Employee;
+
+import org.springframework.ui.Model;
+
+@Controller
+public class EmployeeController {
+	
+	
+	@GetMapping("/iteration")
+	public String iteration(Model model) {
+		List<Employee> list = new ArrayList<>();
+		list.add(new Employee("prabhat", "pandey", "prabhat@123"));
+		list.add(new Employee("prajwal", "pandey", "prajwal@123"));
+		list.add(new Employee("jyoti", "sharma", "jyoti@123"));
+		list.add(new Employee("riya", "singh", "riya@123"));
+		list.add(new Employee("puja ", "kavat", "puja@123"));
+		return "iteration";
+		
+	}
+	
+
+}

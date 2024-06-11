@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymeleaf hello world</title>
+</head>
+<body>
+
+<h1 th:text ="'Themeleaf'  +${message} + 'App'"></h1>
+
+</body>
+</html>

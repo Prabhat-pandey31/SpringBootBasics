@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Switch case</title>
+<link th:href="@{/Css/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+     <div class="row">
+         <h1>Thymeleaf switch case demo</h1>
+         <h4 th:utext="${user.username}"></h4>
+         <div th :switch="${user.role}">
+         <p th:case = "'ADMIN'">USER is an administration</p>
+         <p th:case = "'MANAGER'">USER is an Manager</p>
+         <p th:case = "'GUEST'">USER is an GUEST</p>
+         
+         </div>
+     </div>
+
+
+</div>
+
+</body>
+</html>

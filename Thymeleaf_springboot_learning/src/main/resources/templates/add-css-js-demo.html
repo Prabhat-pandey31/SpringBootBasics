@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Thymeleaf application</title>
+<link th:href ="@{/Css/Main.css}" rel="Stylesheet">
+<script type="text/javascript"  th:src="@{/js/actions.js}"></script>
+</head>
+<body>
+
+<h2>Heading</h2>
+<p>
+    This is the text in which we want to apply <strong>very strong</strong> stylling
+</p>
+
+<button type="button" th:onclick="demo()">Show alert</button>
+
+</body>
+</html>
